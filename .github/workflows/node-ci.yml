@@ -1,0 +1,12 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "dashboard-fullstack" ]
+
+env:
+  DATABASE_URL: ${{ secrets.ProdDatabase }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
